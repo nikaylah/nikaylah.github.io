@@ -7,3 +7,10 @@ nav{
   width: 50%;
   text-align: center;
 }
+
+
+$brown: #c47a53;
+
+body {
+  background-color: $brown;
+}
