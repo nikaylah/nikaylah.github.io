@@ -1,30 +1,339 @@
 <!DOCTYPE html>
-<html> 
-  <head>  
-    <title>Prime Academy HTML / CSS</title>
-    <link rel="stylesheet" href="style.css">
-    
-    
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  
-  <body>
-      <header>
-        <h1>BIG BOLD MESSAGE</h1>
-      </header>
-      
-    <nav>
-      <ul>
-        <li>Some content</li>
-        <li>Some content</li>
-        <li>Some content</li>
-        
-      </ul>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Nikaylah's</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Personal Website">
+    <meta name="keywords" content="nikaylah" />
+    <meta name="author" content="Nikaylah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Styling -->
+    <style>
+        body {
+            margin: 0;
+            font-size: 14px;
+            font-family: 'Karla', sans-serif;
+            line-height: 20px;
+            color: #333333;
+            background-color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .bg-1 {
+            background-image: url("img/unsplash.jpg");
+            background-color: #993232;
+            /* Green */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #FF7B4C;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-4 {
+            background-color: black;
+            /* White */
+            color: #555555;
+        }
+
+        .bg-5 {
+            background-color: #FF946E;
+        }
+
+        .photos {
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            margin: 100px;
+        }
+
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+            /* things I've added that are kinda random*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            background-color: #fafafa;
+            line-height: 100px;
+            font-size: 15px;
+            z-index: 1000;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+        /* Creating slidshow for images */
+
+        .mySlides {
+            display: none;
+        }
+        /* Cards */
+
+        .card {
+            background-color: white;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card-title {
+            color: black;
+        }
+
+        .card-text {
+            color: black;
+            font-size: 9px;
+        }
+
+        .btn {
+            background-color: #FF7B4C;
+            border-color: #FF7B4C;
+        }
+        /* Cards end */
+
+        .flex-container-me {
+            display: flex;
+            justify-content: center;
+        }
+        /* Footer start */
+
+        #footer {
+            background: #fafafa;
+            min-height: 50px;
+            text-align: left;
+            color: #b1b1b1;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .inner {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container>div {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+        }
+
+        .me{
+          opacity: .2;
+        }
+        .contact{
+          background-color: #BA754B;
+        }
+        /* Footer end */
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">Nikaylah</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="photo2.html">PHOTOGRAPHY</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    
-    <main>
-      <p>This is a message!</p>
-      <p>Some more content</p>
-    </main>
-  </body>
-</<html>
+
+    <div class="container-fluid bg-1 text-center">
+        <h3>Who Am I?</h3>
+        <img src="img/unsplash.jpg" alt="Bird" width="350" height="350">
+        <h3>A developer/designer</h3>
+    </div>
+
+    <div class="container-fluid bg-2 text-center" id="projects">
+        <h3>PROJECTS</h3>
+
+
+        <!-- Cards Start -->
+
+        <div class="cards text-center pagination-centered container-fluid">
+
+            <div class="card container-fluid jumbotron w3-panel w3-card-4" style="width:400px">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Infographic Booklet</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See More</a>
+                </div>
+            </div>
+
+            <div class="card container-fluid jumbotron w3-panel w3-card-4" style="width:400px">
+                <a style="display:block" href="photo2.html">
+                    <div class="photos flex-container">
+                        <div class="container-fluid text-center object-fit " style="max-width:500px  object-fit">
+                            <h3>My photography</h3>
+                            <img class="mySlides" src="img/miracle.jpg" style="width:100%">
+                            <img class="mySlides" src="img/them.jpg" style="width:100%">
+                            <img class="mySlides" src="img/guthrie.jpg" style="width:100%">
+                        </div>
+                    </div>
+                </a>
+
+                <div class="card-body">
+                    <h4 class="card-title">Photography Page</h4>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Random but looks cute -->
+        <div class="w3-panel w3-card-4">
+            <p>Break</p>
+        </div>
+        <!-- Cards end -->
+
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3>What Am I?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+    </div>
+
+    <!-- photography slideshow -->
+    <div class="container-fluid bg-4 text-center">
+        <p>p5.js :)</p>
+    </div>
+    <!-- Javascript for image slideshow -->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+
+    <body>
+        <div class="w3-container contact">
+
+            <div class=" w3-panel w3-card-4 jumbotron w3-metro-orange">
+                <h2>CONTACT</h2>
+                <p> Feel free to reach out :)</p>
+
+                <div class="w3-panel w3-card-4 contact-container">
+                    <a target="_blank" href="https://github.com/nikaylah"><i class="fa fa-github w3-panel w3-card-4" alt="Github" style="font-size:36px"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/nikay.visuals/"><i class="fa fa-instagram w3-panel w3-card-4" alt="Instagram" style="font-size:36px"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/nikaylahwoody/"><i class="fa fa-linkedin-square w3-panel w3-card-4" alt="Linkedin" style="font-size:36px"></i></a>
+                    <a target="_blank" href="mailto:nikaylah@gmail.com"><i class="fa fa-envelope w3-panel w3-card-4" alt="Email"style="font-size:36px"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid bg-5 text-center flex-container-me">
+            <div class="w3-card w3-round" style="width:50%">
+                <img src="img/me.psd" class="me" alt="Me" style="width:100%">
+
+                <div>
+                    <p>Chessy quote like this one: Be disciplined not motivated</P>
+                </div>
+            </div>
+
+        </div>
+        <div id="footer">
+            <div class="inner">
+                © 2018 Nikaylah.
+                <span class="right">
+  					<a target="_blank" href="mailto:nikaylah@gmail.com">Email</a>&nbsp;//&nbsp;
+  					<a target="_blank" href="https://www.linkedin.com/in/nikaylahwoody/">LinkedIn</a>&nbsp;//&nbsp;
+  					<a target="_blank" href="https://github.com/nikaylah">Github</a>
+  				</span>
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
