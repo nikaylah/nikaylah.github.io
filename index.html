@@ -21,184 +21,186 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-
-    <!-- Styling -->
-    <style>
-        body {
-            margin: 0;
-            font-size: 14px;
-            font-family: 'Karla', sans-serif;
-            line-height: 20px;
-            color: #333333;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .bg-1 {
-            background-image: url("img/unsplash2.jpg");
-            background-color: #993232;
-            /* Green */
-            color: black;
-        }
-
-        .bg-2 {
-            background-color: #474e5d;
-            /* Dark Blue */
-            color: #ffffff;
-        }
-
-        .bg-3 {
-            background-color: #FF7B4C;
-            /* Dark Blue */
-            color: #ffffff;
-        }
-
-        .bg-4 {
-            background-color: black;
-            /* White */
-            color: #555555;
-        }
-
-        .bg-5 {
-            background-color: #FF946E;
-        }
-
-        .photos {
-            width: 200px;
-            height: 200px;
-            border: 7px solid black;
-            margin: 50px;
-        }
-
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-        }
-
-        .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-            /* things I've added that are kinda random*/
-            position: fixed;
-            top: 0;
-            left: 0;
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            text-align: center;
-            width: 100%;
-            background-color: #fafafa;
-            line-height: 100px;
-            font-size: 15px;
-            z-index: 1000;
-        }
-
-        .navbar-nav li a:hover {
-            color: #1abc9c !important;
-        }
-        /* Creating slidshow for images */
-
-        .mySlides {
-            display: none;
-        }
-        /* Cards */
-
-        .card {
-            background-color: white;
-        }
-
-        .cards {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .card-title {
-            color: black;
-        }
-
-        .card-text {
-            color: black;
-            font-size: 9px;
-        }
-
-        .btn {
-            background-color: #FF7B4C;
-            border-color: #FF7B4C;
-        }
-        /* Cards end */
-
-        .flex-container-me {
-            display: flex;
-            justify-content: center;
-        }
-        /* Footer start */
-
-        #footer {
-            background: #fafafa;
-            min-height: 50px;
-            text-align: left;
-            color: #b1b1b1;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            font-size: 12px;
-            line-height: 20px;
-        }
-
-        .inner {
-            max-width: 1024px;
-            margin: 0 auto;
-        }
-
-        .right {
-            float: right;
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contact-container !important {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-
-        .contact2-container {
-            display: flex;
-            height: 300px justify-content: center;
-
-            align-items: center;
-        }
-
-        .flex-container>div {
-            height: 200px;
-            width: 200px;
-            text-align: center;
-            line-height: 75px;
-        }
-
-        .me {
-            opacity: .2;
-            float: left;
-        }
-
-        .w3-container {
-            height: 300px;
-        }
-
-        .contact {
-            background-color: black;
-        }
-        /* Footer end */
-    </style>
 </head>
 
+<style>
+
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.bg-1 {
+    background-image: url("img/unsplash2.jpg");
+    background-color: #993232;
+    /* Green */
+    color: black;
+}
+
+.name{
+  margin-top: -4%;
+}
+.bg-2 {
+    background-color: #474e5d;
+    /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-3 {
+    background-color: #FF7B4C;
+    /* Dark Blue */
+    color: #ffffff;
+}
+
+.bg-4 {
+    background-color: black;
+    /* White */
+    color: #555555;
+}
+
+.bg-5 {
+    background-color: #FF946E;
+}
+
+.photos {
+    width: 200px;
+    height: 200px;
+    border: 7px solid black;
+    margin: 50px;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    /* things I've added that are kinda random*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    background-color: #fafafa;
+    line-height: 100px;
+    font-size: 15px;
+    z-index: 1000;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+/* Creating slidshow for images */
+
+.mySlides {
+    display: none;
+}
+/* Cards */
+
+.card {
+    background-color: white;
+}
+
+.cards {
+
+    justify-content: space-around;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+    font-size: 9px;
+}
+
+.btn {
+    background-color: #FF7B4C;
+    border-color: #FF7B4C;
+}
+/* Cards end */
+
+.flex-container-me {
+    display: flex;
+    justify-content: center;
+}
+/* Footer start */
+
+#footer {
+    background: #fafafa;
+    min-height: 50px;
+    text-align: left;
+    color: #b1b1b1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container !important {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.contact2-container {
+    display: flex;
+    height: 300px justify-content: center;
+
+    align-items: center;
+}
+
+.flex-container>div {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 75px;
+}
+
+.me {
+    opacity: .2;
+    float: left;
+}
+
+.w3-container {
+    height: 300px;
+}
+
+.contact {
+    background-color: black;
+}
+/* Footer end */
+</style>
 <body>
 
     <!-- Nav Bar -->
@@ -225,7 +227,7 @@
     <div class="container-fluid bg-1 text-center">
         <h3 style="color: white">...</h3>
         <img src="img/unsplash.jpg" alt="Bird" width="350" height="350">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-dark-grey w3-center">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-dark-grey w3-center name">
             <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">NIKAYLAH</h1>
             <h5 class="w3-hide-large" style="white-space:nowrap">NIKAYLAH</h5>
             <h5 class="w3-hide-medium w3-hide-small">DEVELOPER</h5>
@@ -250,10 +252,10 @@
                 <img class="card-img-top" src="img/project.jpg.png" width="70%" height="70%" alt="Card image cap">
                 <img class="card-img-top" src="img/Hair.jpg" width="70%" height="70%" alt="Card image cap">
                 <div class="card-body">
-                    <h4 class="card-title">Design Pojects</h4>
+                    <h4 class="card-title" style="display: inline-block">Design Projects</h4>
                     <p class="card-text">-Logo Designs</p>
                     <p class="card-text">-Infographic Booklet</p>
-                    <a href="#" class="btn btn-primary">See More</a>
+                    <a href="img/booklet.pdf" target="_blank" class="btn btn-primary">See More</a>
                 </div>
             </div>
 
@@ -300,11 +302,11 @@
     </script>
 
     <div class="container-fluid bg-2 text-center">
-        <h3>a twenty-one year old developer and designer based in Minnesota</h3>
+        <h3> - a twenty-two year old developer and designer based in Minnesota - </h3>
         <br>
-        <p> ...currently a senior studying computer science at Augsburg University</p>
+        <p> Computer Science &#9679; Augsburg University</p>
         <br>
-        <p>lover of the world</p>
+        <p>lover of the world &#x2600;</p>
 
     </div>
 
@@ -313,7 +315,7 @@
 
     <div class="container-fluid bg-5 text-center flex-container-me">
         <div>
-            <p><img src="img/me.psd" class="me" alt="Me" style="width:50%; height:50%; margin-right:15px;">...just trying to make a difference in the world a line of code at a time</p>
+            <p><img src="img/me.jpg" class="me" alt="Me" style="width:50%; height:50%; margin-right:15px;"> ...just trying to make a difference in the world a line of code at a time</p>
 
         </div>
 
