@@ -11,6 +11,17 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119038798-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119038798-1');
+</script>
+</head>
     <style>
         .navbar {
             padding-top: 15px;
@@ -45,7 +56,7 @@
             padding-bottom: 15px;
         }
 
-        body {
+        body  {
             font-family: Verdana, sans-serif;
             margin: 0;
         }
@@ -66,7 +77,7 @@
             clear: both;
         }
 
-        .column {
+        .column{
             float: left;
             width: 25%;
             /* Adding */
@@ -87,7 +98,7 @@
         }
         /* Modal Content */
 
-        .modal-content {
+        .modal-content{
             position: relative;
             background-color: #fefefe;
             margin: auto;
@@ -211,7 +222,7 @@
         /* Footer end */
     </style>
 
-</head>
+
 
 <body>
 
@@ -224,7 +235,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                <a class="navbar-brand" href="#">logo</a>
+                <a class="navbar-brand" href="index.html">Nikaylah</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -248,13 +259,22 @@
             <img src="img/them.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
         <div class="column">
-            <img src="img/guthrie.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src="img/miraclepink.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
         <div class="column">
             <img src="img/miracle2.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
         <div class="column">
             <img src="img/sunset.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/sharif.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/jada.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="img/guthrie.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
         </div>
     </div>
 
@@ -263,28 +283,40 @@
         <div class="modal-content">
 
             <div class="mySlides">
-                <div class="numbertext">1 / 5</div>
+                <div class="numbertext">1 / 8</div>
                 <img src="img/miracle.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">2 / 5</div>
+                <div class="numbertext">2 / 8</div>
                 <img src="img/them.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">3 / 5</div>
-                <img src="img/guthrie.jpg" style="width:100%">
+                <div class="numbertext">3 / 8</div>
+                <img src="img/miraclepink.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">4 / 5</div>
+                <div class="numbertext">4 / 8</div>
                 <img src="img/miracle2.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">5 / 5</div>
+                <div class="numbertext">5 / 8</div>
                 <img src="img/sunset.jpg" style="width:100%">
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="img/sharif.jpg" style="width:100%">
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="img/img/jada.jpg" style="width:100%">
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 8</div>
+                            <img src="guthrie.jpg" style="width:100%">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -296,19 +328,28 @@
 
 
             <div class="column">
-                <img class="demo cursor" src="img/miracle.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                <img class="demo cursor" src="img/miracle.jpg" style="width:100%" onclick="currentSlide(1)" alt="Gold">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/them.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+                <img class="demo cursor" src="img/them.jpg" style="width:100%" onclick="currentSlide(2)" alt="them">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/guthrie.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                <img class="demo cursor" src="img/miraclepink.jpg" style="width:100%" onclick="currentSlide(3)" alt="Watermelon pink">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/miracle2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                <img class="demo cursor" src="img/miracle2.jpg" style="width:100%" onclick="currentSlide(4)" alt="Red">
             </div>
             <div class="column">
-                <img class="demo cursor" src="img/sunset.jpg" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+                <img class="demo cursor" src="img/sunset.jpg" style="width:100%" onclick="currentSlide(5)" alt="Him and Her">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/sharif.jpg" style="width:100%" onclick="currentSlide(6)" alt="Skyway grounds">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="img/jada.jpg" style="width:100%" onclick="currentSlide(7)" alt="Lemon">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="guthrie.jpg" style="width:100%" onclick="currentSlide(8)" alt="Up">
             </div>
         </div>
     </div>
